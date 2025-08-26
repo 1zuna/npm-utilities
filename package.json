@@ -1,0 +1,46 @@
+{
+  "name": "@viettv/universal-utils",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0.0",
+  "description": "A comprehensive utility library for file operations, HTTP requests, data processing, and more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\"",
+    "prepublishOnly": "echo \"Ready to publish\""
+  },
+  "keywords": [
+    "utilities",
+    "file-operations",
+    "http-requests",
+    "excel",
+    "json",
+    "vietnamese",
+    "text-processing",
+    "array-helpers",
+    "console-colors",
+    "async-helpers"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1zuna/npm-utilities.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1zuna/npm-utilities/issues"
+  },
+  "homepage": "https://github.com/1zuna/npm-utilities#readme",
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ]
+}
