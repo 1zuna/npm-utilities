@@ -307,6 +307,26 @@ const getPositionOfSubString = (string, subStr, index) => {
 };
 
 /**
+ * insert character to string at index
+ * @param {*} originalString 
+ * @param {*} charToInsert 
+ * @param {*} position 
+ * @returns 
+ */
+const insertChar = function(originalString, charToInsert, position) {
+    // Handle cases where position is out of bounds
+    if (position < 0) {
+      position = 0;
+    }
+    if (position > originalString.length) {
+      position = originalString.length;
+    }
+  
+    // Slice the string and concatenate
+    return originalString.slice(0, position) + charToInsert + originalString.slice(position);
+  }
+
+/**
  * Remove Vietnamese accent marks from text
  * @param {string} str - String with Vietnamese characters
  * @returns {string} String without accents
@@ -524,6 +544,7 @@ module.exports = {
 
     // String Operations
     getPositionOfSubString,
+    insertChar,
     removeVietnameseTones,
 
     // Array Operations
